@@ -1,1 +1,1 @@
-web: echo "Hello"; echo "Port: '$PORT'"
+web: sh generate_properties.sh; sh davmail.sh davmail.properties
