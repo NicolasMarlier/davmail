@@ -1,9 +1,9 @@
 rm -f -r davmail.properties
 while read line
 do
-if [ "$line" = "davmail.smtpPort=" ]
+if [ "$line" = "davmail.caldavPort=" ]
 then
-echo "davmail.smtpPort=$PORT\n" >> "davmail.properties"
+echo "davmail.caldavPort=$PORT\n" >> "davmail.properties"
 else
 echo "$line\n" >> "davmail.properties"
 fi
